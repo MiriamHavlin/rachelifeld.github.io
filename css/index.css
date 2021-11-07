@@ -1,0 +1,70 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    direction: rtl;
+    font-size: 0.5rem;
+}
+
+body {
+    display: grid;
+    grid-template-rows: repeat(9, 1fr);
+}
+
+header {
+    grid-row: 1/3;
+    width: 100%;
+    position: fixed;
+}
+
+#pictuer {
+    position: fixed;
+    margin-top: 0;
+    margin-left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1000;
+    opacity: 70%;
+    object-fit: cover;
+}
+
+.menu {
+    grid-row: 5/6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: center;
+    font-size: 2.25rem;
+    background-color: rgba(139, 1, 1, 0.5);
+}
+ a:hover{
+    transform:scale(1.2);
+}
+a {
+    color: beige;
+    margin: auto;
+    font-size: 4rem;
+  font-family: Guttman Yad ; 
+}
+
+h1 {
+    font-size: 8rem;
+    font-style: Guttman Yad;
+    text-align: center;
+    font-family: Aharoni;
+}
+
+
+@media screen and (min-width: 700px) {
+    html {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    html {
+        font-size: 1rem;
+    }
+}

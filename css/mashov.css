@@ -1,0 +1,129 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    direction: rtl;
+    font-size: 0.6rem;
+    font-family: Guttman Yad ; 
+}
+
+body {
+    background-color: black;
+    color: beige;
+}
+
+form {
+    font-size: 2rem;
+    border: beige solid 0.2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    margin: auto;
+    text-align: center;
+}
+
+table th {
+    text-align: right;
+    font-size: 1.5rem;
+    background-color: black;
+    color: white;
+    border: beige 0.2rem solid;
+    text-align: center;
+}
+
+table td {
+    border: 0.2rem solid rgb(255, 255, 255);
+    font-size: 1.3rem;
+}
+
+table tr:nth-child(odd) td {
+    background-color: brown;
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 5rem;
+    margin: auto;
+    text-align: center;
+    background-color: brown;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: Aharoni;
+}
+a{
+    color:beige;
+}
+
+
+iframe {
+    height: 30rem;
+    width: 35rem;
+    margin-right:auto;
+    margin-top: 5rem;
+}
+
+
+
+@media screen and (min-width: 700px) {
+    html {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    html {
+        font-size: 1rem;
+    }
+    table {
+        margin: 0;
+    }
+}
+
+@supports (display: flex) {
+    @media screen and (min-width: 1200px) {
+        div {
+            display: flex;
+            margin-bottom: 0em;
+            justify-content: space-evenly;
+        }
+        table {
+            margin: 0;
+        }
+        iframe {
+            margin: 0;
+        }
+    }
+}
+
+#home {
+    position: fixed;
+    font-size: 4rem;
+    color: beige;
+    font-family: Aharoni;
+    margin-right: 2%;
+}
+#home:hover{
+    transform:scale(1.2);
+}
+form{
+    text-align: center;
+}
+select{
+    font-size: 2rem;
+}
+textarea{
+    font-size: 1.5rem;
+}
+#submit{
+ font-size: 2rem;
+}
+#submit:hover{
+    transform:scale(1.2);
+}

@@ -1,0 +1,120 @@
+html {
+    direction: rtl;
+    font-size: 0.7rem;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 5rem repeat(8, 1fr) 10rem;
+}
+
+header {
+    grid-column: 1/11;
+    grid-row: 1/2;
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    grid-column: 1/2;
+    grid-row: 3/10;
+}
+
+main {
+    grid-column: 2/11;
+    grid-row: 2/10;
+    /* background-image: url("../pictures/IMG_5932-2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-size: cover;
+    opacity: 70%; */
+}
+
+footer {
+    grid-column: 1/11;
+    grid-row: 10/11;
+}
+
+h1 {
+    color: beige;
+    text-align: center;
+    font-size: 5rem;
+    background-color: brown;
+    font-family: Aharoni;
+}
+
+h2 {
+    font-size: 3.5rem;
+    font-family: Aharoni;
+}
+
+p {
+    font-size: 200%;
+    font-family: Guttman Yad-brush;
+    color: black;
+    text-align: justify;
+}
+
+ul {
+    position: fixed;
+    font-size: 1.5rem;
+}
+
+li {
+    margin-bottom: 3rem;
+}
+
+#picture {
+    position: fixed;
+    margin-top: 0;
+    margin-left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1000;
+    opacity: 70%;
+    object-fit: cover;
+}
+
+.info {
+    width: 70%;
+    margin: auto;
+    /* border: 0.2rem black dashed; */
+}
+
+#home {
+    position: fixed;
+    font-size: 4rem;
+    font-family: Aharoni;
+    margin-right: 2%;
+}
+#home:hover{
+    transform:scale(1.2);
+}
+
+a {
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 670px) {
+    html {
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    html {
+        font-size: 1rem;
+    }
+}
